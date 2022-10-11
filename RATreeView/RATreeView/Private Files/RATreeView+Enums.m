@@ -102,6 +102,10 @@
       return RATreeViewStylePlain;
     case UITableViewStyleGrouped:
       return RATreeViewStyleGrouped;
+#warning -- MIKA HC ADD 缺少返回值导致编译不过问题
+      default:
+        return UITableViewScrollPositionNone;
+#warning -- MIKA HC ADD 缺少返回值导致编译不过问题
   }
 }
 #pragma mark Scroll Positions
